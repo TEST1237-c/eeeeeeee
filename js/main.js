@@ -19,7 +19,7 @@ triggers.forEach(el => {
             modal.classList.add('active');
             document.body.style.overflow = 'hidden';
             videoPlayer.load();
-            videoPlayer.play();
+            videoPlayer.play().catch(() => {});
         }
     });
 });
