@@ -52,7 +52,7 @@ function renderMediaGrid(container, items, type) {
                     const vid = document.getElementById('videoPlayer');
                     if (vid) {
                         vid.load();
-                        vid.play();
+                        vid.play().catch(() => {});
                     }
                 }
             }
